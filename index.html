@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <script src="https://kit.fontawesome.com/8044b1095e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.css"/>
+  <link rel="stylesheet" href="./assets/css/reset.css" />
+  <link rel="stylesheet" href="./assets/css/styles.css" />
+  <title>Weather Dashboard</title>
+</head>
+
+<body>
+  <header class="container-fluid text-center text-white bg-dark p-2 h1">
+    <h1>Weather Dashboard</h1>
+  </header>
+
+  <!-- max-width for ultra wide resolutions -->
+  <div class="container-fluid" style="max-width: 1400px">
+    <div class="row">
+      <aside class="sidebar border-right col-md-3 col-lg-2 p-3">
+        <h2 id="form-heading" class="mt-1 h3 form-label">
+          Search for a City:
+        </h2>
+        <form id="search-form">
+          <div class="row g-3">
+            <div>
+              <input class="form-control weather-search" type="search" id="search-input" placeholder="London"
+                aria-labelledby="form-heading" aria-controls="today forecast" />
+            </div>
+            <div>
+              <button type="submit" class="btn btn-dark btn-block w-100" id="search-button" aria-label="submit search">
+                Search&nbsp;<i class="fa-solid fa-magnifying-glass"></i>
+              </button>
+            </div>
+          </div>
+        </form>
+        <hr>
+        <div data-bs-theme="light">
+          <div class="card-header fw-semibold">
+            <i class="fa-solid fa-earth-americas"></i>&nbsp;Search History
+          </div>
+          <ul class="list-group list-group-flush list-unstyled mb-0" id="history-list">
+          </ul>
+        </div>
+      </aside>               
+      
+
+      <main class="container col-md-9 ms-sm-auto col-lg-10 px-md-4">
+        <div class="row">
+            <section id="today" class="col-12 py-2">
+            </section>
+        </div>
+            <section id="forecast" class="row row-cols-1 row-cols-md-5 mb-5">
+            </section>
+    </main>
+    </div>
+  </div>
+
+  <!-- Day.js -->
+  <script src="https://cdn.jsdelivr.net/npm/dayjs@1/dayjs.min.js"></script>
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <!-- script.js -->
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

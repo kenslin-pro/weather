@@ -1,0 +1,35 @@
+/* General styling */
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	background-color: #68b4e9;
+}
+
+p{
+	line-height: 1.5;
+}
+
+/* Sidebar */
+.card-header {
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.list-group-item {
+	background-color: transparent;
+	color:#ffffff;
+}
+
+.list-group-item:hover {
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+
+/* Forecast section */
+#today {
+    margin-bottom: 1rem;
+}
+
+.card {
+	background-color: #4b88ae;
+	border: 0;
+}
